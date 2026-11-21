@@ -1,0 +1,26 @@
+# نظام التشغيل
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# المحررات
+.vscode/
+.idea/
+*.swp
+
+# سجلات ومؤقتات
+*.log
+*.tmp
+*.bak
+npm-debug.log*
+
+# أسرار ونسخ احتياطية (لا تُرفع أبدًا)
+.env
+.env.*
+*.key
+backups/
+hagar-backup-*.json
+
+# مستقبلًا إن أُضيفت أدوات بناء
+node_modules/
+dist/

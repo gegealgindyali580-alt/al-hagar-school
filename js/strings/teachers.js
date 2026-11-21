@@ -1,0 +1,1 @@
+(function (HJ) { 'use strict'; HJ.strings.teachers = {"title": "المدرسون", "duplicate": "الرقم القومي مسجل لمدرس آخر", "overload": "النصاب الأسبوعي يتجاوز 24 حصة", "reassignFirst": "أعد توزيع حصص المدرس قبل إنهاء خدمته"}; })(window.HJ);

@@ -1,0 +1,1 @@
+(function (HJ) { 'use strict'; HJ.strings.header = {"morning": "صباح الخير", "evening": "مساء الخير", "admin": "مدير المدرسة", "teacher": "مدرس", "student": "طالب", "parent": "ولي أمر", "account": "حسابي", "search": "ابحث في المنصة...", "notifications": "الإشعارات"}; })(window.HJ);

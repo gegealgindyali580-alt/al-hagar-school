@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4C1D95">
+  <title>مدرسة الحجر الثانوية المشتركة</title>
+  <link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500;700&display=swap">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: {
+        sans: ['Tajawal', 'Cairo', 'Segoe UI', 'Tahoma', 'sans-serif'],
+        heading: ['Cairo', 'Tajawal', 'Segoe UI', 'Tahoma', 'sans-serif']
+      } } }
+    };
+  </script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/print.css" media="print">
+</head>
+<body class="bg-gray-100 font-sans text-gray-900 antialiased">
+  <noscript><p class="p-6 text-center">يتطلب هذا التطبيق تفعيل JavaScript.</p></noscript>
+  <div id="boot-screen"></div>
+  <div id="login-root" hidden></div>
+  <div id="app-shell" class="min-h-screen" hidden>
+    <aside id="app-sidebar"></aside>
+    <div id="app-body">
+      <header id="app-header"></header>
+      <main id="app-main" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toast-root"></div>
+  <div id="modal-root"></div>
+  <div id="assistant-root"></div>
+  <div id="print-root"></div>
+  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.js"></script>
+  <script defer src="./js/config.js"></script>
+  <!-- SLOT:strings -->
+  <script defer src="./js/strings/common.js"></script>
+  <script defer src="./js/strings/activity.js"></script>
+  <script defer src="./js/strings/assistant.js"></script>
+  <script defer src="./js/strings/attendance.js"></script>
+  <script defer src="./js/strings/classes.js"></script>
+  <script defer src="./js/strings/dashboard.js"></script>
+  <script defer src="./js/strings/finance.js"></script>
+  <script defer src="./js/strings/grades.js"></script>
+  <script defer src="./js/strings/header.js"></script>
+  <script defer src="./js/strings/library.js"></script>
+  <script defer src="./js/strings/login.js"></script>
+  <script defer src="./js/strings/settings.js"></script>
+  <script defer src="./js/strings/shell.js"></script>
+  <script defer src="./js/strings/students.js"></script>
+  <script defer src="./js/strings/teachers.js"></script>
+  <script defer src="./js/utils.js"></script>
+  <script defer src="./js/validators.js"></script>
+  <script defer src="./js/icons.js"></script>
+  <script defer src="./js/storage.js"></script>
+  <script defer src="./js/seed-names.js"></script>
+  <script defer src="./js/seed.js"></script>
+  <script defer src="./js/permissions.js"></script>
+  <script defer src="./js/auth.js"></script>
+  <script defer src="./js/router.js"></script>
+  <script defer src="./js/ui.js"></script>
+  <script defer src="./js/charts.js"></script>
+  <!-- SLOT:services -->
+  <script defer src="./js/services/activity.js"></script>
+  <script defer src="./js/services/aicontext.js"></script>
+  <script defer src="./js/services/announcements.js"></script>
+  <script defer src="./js/services/attendance.js"></script>
+  <script defer src="./js/services/classes.js"></script>
+  <script defer src="./js/services/finance.js"></script>
+  <script defer src="./js/services/grades.js"></script>
+  <script defer src="./js/services/library.js"></script>
+  <script defer src="./js/services/notifications.js"></script>
+  <script defer src="./js/services/parents.js"></script>
+  <script defer src="./js/services/settings.js"></script>
+  <script defer src="./js/services/stats.js"></script>
+  <script defer src="./js/services/students.js"></script>
+  <script defer src="./js/services/subjects.js"></script>
+  <script defer src="./js/services/teachers.js"></script>
+  <script defer src="./js/services/users.js"></script>
+  <script defer src="./js/ai.js"></script>
+  <!-- SLOT:components -->
+  <script defer src="./js/components/sidebar.js"></script>
+  <script defer src="./js/components/header.js"></script>
+  <script defer src="./js/components/notifications.js"></script>
+  <script defer src="./js/components/assistant.js"></script>
+  <!-- SLOT:pages -->
+  <script defer src="./js/pages/attendance.js"></script>
+  <script defer src="./js/pages/classes.js"></script>
+  <script defer src="./js/pages/dashboard.js"></script>
+  <script defer src="./js/pages/finance.js"></script>
+  <script defer src="./js/pages/grades.js"></script>
+  <script defer src="./js/pages/library.js"></script>
+  <script defer src="./js/pages/login.js"></script>
+  <script defer src="./js/pages/settings.js"></script>
+  <script defer src="./js/pages/students.js"></script>
+  <script defer src="./js/pages/teachers.js"></script>
+  <script defer src="./js/app.js"></script>
+</body>
+</html>

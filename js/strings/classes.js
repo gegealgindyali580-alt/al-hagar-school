@@ -1,0 +1,1 @@
+(function (HJ) { 'use strict'; HJ.strings.classes = {"title": "الصفوف الدراسية", "capacity": "سعة الفصل ممتلئة", "notEmpty": "لا يمكن حذف فصل يحتوي طلابًا", "scheduleConflict": "يوجد تعارض في الفصل أو المدرس"}; })(window.HJ);

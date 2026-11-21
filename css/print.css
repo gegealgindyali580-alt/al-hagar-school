@@ -1,0 +1,7 @@
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  #app-sidebar, #app-header, #toast-root, #modal-root, #assistant-root, .no-print { display: none !important; }
+  #app-body, #app-main { width: 100% !important; margin: 0 !important; padding: 0 !important; }
+  .stat-overlap { margin-top: 0; }
+  .print-break { break-after: page; }
+}

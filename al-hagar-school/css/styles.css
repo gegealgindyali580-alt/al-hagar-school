@@ -1,0 +1,42 @@
+/* الأنماط المخصصة التي لا يغطيها Tailwind */
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; }
+#app-body { min-width: 0; transition: margin 300ms ease; }
+#app-sidebar { width: 256px; flex: 0 0 256px; transition: width 300ms ease, transform 300ms ease; }
+#app-sidebar.is-collapsed { width: 80px; flex-basis: 80px; }
+.sidebar-label { transition: opacity 150ms ease; }
+.is-collapsed .sidebar-label, .is-collapsed .school-name { display: none; }
+.sidebar-link { min-height: 48px; }
+.sidebar-link[aria-current="page"] { background: #4C1D95; border-inline-start: 3px solid #A78BFA; }
+.hero-pattern { background-image: radial-gradient(circle at 15% 20%, rgba(255,255,255,.10) 0 2px, transparent 3px), radial-gradient(circle at 80% 65%, rgba(255,255,255,.08) 0 3px, transparent 4px); background-size: 34px 34px, 52px 52px; }
+.stat-overlap { position: relative; z-index: 2; margin-top: -3rem; }
+.ticker-track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(50%); } }
+.login-panel { min-height: 100vh; }
+.card-hover { transition: transform 180ms ease, box-shadow 180ms ease; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(17,24,39,.10); }
+.page-enter { animation: page-enter 220ms ease both; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+#toast-root { position: fixed; inset-block-start: 1rem; inset-inline-start: 1rem; z-index: 80; }
+.toast { max-width: min(90vw, 380px); }
+.mobile-overlay { position: fixed; inset: 0; background: rgba(17,24,39,.55); z-index: 30; }
+@media (max-width: 1023px) {
+  #app-sidebar { position: fixed; z-index: 40; inset-block: 0; inset-inline-start: 0; transform: translateX(110%); height: 100dvh; }
+  #app-sidebar.mobile-open { transform: translateX(0); }
+  #app-sidebar.is-collapsed { width: 256px; }
+  #app-sidebar.is-collapsed .sidebar-label, #app-sidebar.is-collapsed .school-name { display: inline; }
+  #app-body { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .ticker-track { animation: none; }
+}
+
+/* Phases 4–6: charts, search, tables and responsive operational screens */
+.hj-chart{position:relative;width:100%;min-height:15rem}
+.hj-chart canvas{max-width:100%}
+#global-results a:focus-visible,#notification-panel button:focus-visible{outline:2px solid #7c3aed;outline-offset:2px}
+#attendance-list select:disabled,#attendance-list input:disabled{background:#f9fafb;color:#6b7280}
+@media(max-width:640px){.hj-chart{min-height:13rem}.stat-overlap{margin-top:-1.5rem}}

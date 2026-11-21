@@ -1,0 +1,1 @@
+(function (HJ) { 'use strict'; HJ.strings.students = {"title": "الطلاب", "fullName": "يجب إدخال الاسم الرباعي على الأقل", "nationalId": "الرقم القومي المصري غير صحيح", "phone": "أدخل رقم هاتف مصري صحيحًا", "duplicateNationalId": "الرقم القومي مسجل لطالب آخر"}; })(window.HJ);
